@@ -3,11 +3,13 @@ import { FoodComponent } from './food.component';
 import { Food } from './food.model';
 import { EditFoodDetailsComponent } from './edit-food-details.component';
 import { NewFoodComponent } from './new-food.component';
+import {CaloriesPipe} from './calories.pipe';
 
 @Component({
   selector: 'food-list',
   inputs: ['foodList'],
   outputs: ['onFoodSelect'],
+  pipes: [CaloriesPipe],
   directives: [FoodComponent, EditFoodDetailsComponent, NewFoodComponent],
   template: `
     <select (change)="onChange($event.target.value)" class="filter">
