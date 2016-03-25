@@ -2,7 +2,6 @@ body {
   background: #2585ae;
   display: flex;
   flex-direction: column;
-  /*color: white;*/
 }
 
 h1 {
@@ -15,7 +14,6 @@ h1 {
   border-bottom: 4px dashed #edc613;
   padding-bottom: 50px;
   color: white;
-  opacity: 0.9;
 }
 
 h4 {
@@ -24,12 +22,11 @@ h4 {
 }
 
 .food-form {
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: 27%;
 }
 
 .add-button {
-  margin-top: 60px;
   margin-left: 10px;
   height: 50px;
   width: 50px;
@@ -42,18 +39,16 @@ h4 {
   color: white;
 }
 
-p {
+label p {
   font-weight: 300;
   color: #edc613;
   letter-spacing: 0.05em;
-  /*text-align: center;*/
 }
 
 h5 {
   font-weight: 500;
   color: #edc613;
   letter-spacing: 0.1em;
-  /*text-align: center;*/
 }
 
 .input-sm {
@@ -64,10 +59,6 @@ h5 {
   font-size: 1em;
 }
 
-.selected {
-  color: #edc613;
-}
-
 .form-heading {
   color: #164f68;
   font-weight: 400;
@@ -76,6 +67,13 @@ h5 {
 
 .food-list {
   text-align: center;
+  /*color: white;*/
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.selected {
+  color: #edc613;
 }
 
 select {
@@ -91,6 +89,8 @@ select {
   letter-spacing: .1em;
   font-weight: 300;
   font-size: 16px;
+  opacity: normal;
+  color: white;
 }
 
 .foodDetails {

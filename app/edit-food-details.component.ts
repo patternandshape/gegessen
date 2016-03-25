@@ -7,9 +7,9 @@ import { Food } from './food.model';
   template: `
     <div class="food-form">
     <h4 class="form-heading">Edit Meal: </h4>
-    <input placeholder="Food" [(ngModel)]="food.name" class="input-sm food-name-form">
-    <input placeholder="Calories" [(ngModel)]="food.calories" class="input-sm food-name-form">
-    <input placeholder="Details" [(ngModel)]="food.details" class="input-sm food-name-form">
+    <input placeholder="Food" [(ngModel)]="food.name" class="input-sm">
+    <input placeholder="Calories" [(ngModel)]="food.calories" class="input-sm">
+    <input placeholder="Details" [(ngModel)]="food.details" class="input-sm">
     </div>
   `
 })

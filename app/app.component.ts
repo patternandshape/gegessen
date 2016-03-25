@@ -19,7 +19,7 @@ export class AppComponent {
   public foods: Food[];
   constructor() {
     this.foods = [
-      new Food("Apfelstrudel", 520, " Grandma sent this via FedEx. Only ate one 'serving'."),
+      new Food("Apfelstrudel", 1000, " Grandma sent this via FedEx. Only ate one 'serving'."),
       new Food("Sauerkraut", 27, " Put a bit on top of my vegan bratwurst."),
       new Food("Marzipankartoffeln", 350, " Ate too many of these at the Christmas market. Sehr gut.")
     ];
