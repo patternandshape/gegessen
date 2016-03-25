@@ -12,7 +12,7 @@ The user of this app should be able to log each food that they eat with some det
 
 ### Setup Instructions
 
-1. Open Terminal and clone this repository:<br> ```https://github.com/patternandshape/taproom-app.git```
+1. Open Terminal and clone this repository:<br> ```https://github.com/patternandshape/gegessen.git```
 2. Within the project directory run:<br>
        ```$ npm install ```<br>
        ```$ bower install ```<br>
