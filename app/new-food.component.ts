@@ -6,14 +6,11 @@ import { Food } from './food.model';
   outputs: ['onSubmitNewFood'],
   template: `
   <div class="food-form">
-    <h4>Create Food: </h4>
+    <h4>Add Meal: </h4>
     <input placeholder="Food" class="input-sm" #newFood>
+    <input placeholder="Calories" class="input-sm" #newCalories>
     <input placeholder="Details" class="input-sm" #newDetails>
-    <input placeholder="Calorie Count" class="input-sm" #newCalories>
-    <button (click)="addFood(newFood, newDetails, newCalories)" class="create btn-success btn-sm add-button">Add</button>
-    // <div *ngIf="food.pints < 10" class="lowFood">
-    // <h5>Less than 10 pints remaining!</h5>
-    // </div>
+    <button (click)="addFood(newFood, newCalories, newDetails)" class="create btn-success btn-sm add-button">Add</button>
   </div>
   `
 })
@@ -22,12 +19,12 @@ export class NewFoodComponent {
   constructor() {
     this.onSubmitNewFood = new EventEmitter();
   }
-  addFood(foodName: HTMLInputElement, foodDetails: HTMLInputElement, foodCalories: HTMLInputElement) {
-    var newFood = new Food(foodName.value, foodDetails.value, parseInt(foodCalories.value));
+  addFood(foodName: HTMLInputElement, foodCalories: HTMLInputElement, foodDetails: HTMLInputElement) {
+    var newFood = new Food(foodName.value, parseInt(foodCalories.value), foodDetails.value);
     this.onSubmitNewFood.emit(newFood);
     console.log(newFood);
     foodName.value = "";
-    foodDetails.value = "";
     foodCalories.value = "";
+    foodDetails.value = "";
   }
 }

@@ -19,9 +19,9 @@ export class AppComponent {
   public foods: Food[];
   constructor() {
     this.foods = [
-      new Food("Apfelstrudel", "Grandma sent this via FedEx. Only ate one 'serving'.", 520),
-      new Food("Sauerkraut", "Put a bit on top of my vegan bratwurst.", 27),
-      new Food("Marzipankartoffeln", "Ate too many of these at the Christmas market. Sehr gut.", 350)
+      new Food("Apfelstrudel", 520, " Grandma sent this via FedEx. Only ate one 'serving'."),
+      new Food("Sauerkraut", 27, " Put a bit on top of my vegan bratwurst."),
+      new Food("Marzipankartoffeln", 350, " Ate too many of these at the Christmas market. Sehr gut.")
     ];
   }
   foodWasSelected(clickedFood: Food): void {

@@ -3,7 +3,7 @@ import { FoodComponent } from './food.component';
 import { Food } from './food.model';
 import { EditFoodDetailsComponent } from './edit-food-details.component';
 import { NewFoodComponent } from './new-food.component';
-import {CaloriesPipe} from './calories.pipe';
+import { CaloriesPipe } from './calories.pipe';
 
 @Component({
   selector: 'food-list',
@@ -19,6 +19,7 @@ import {CaloriesPipe} from './calories.pipe';
     </select>
     <food-display *ngFor="#currentFood of foodList | calories:filterDone"
     (click)="foodClicked(currentFood)"
+    [class.selected]="currentFood === selectedFood"
     [food]="currentFood">
     </food-display>
     <edit-food-details *ngIf="selectedFood" [food]="selectedFood">

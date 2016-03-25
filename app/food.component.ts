@@ -6,14 +6,17 @@ import { Food } from './food.model';
   inputs: ['food'],
   template: `
   <div>
-    <button (click)="sellPint()" class="btn-success add-button"> \+ </button>
-    <label>{{ food.name }},{{ food.details }}, {{ food.calories }} kCal</label>
+    <button (click)="addMeal()" class="btn-success add-button"> \+ </button>
+    <label>
+    <h4>{{ food.name }}</h4>
+    <h5>{{ food.calories }} kCal</h5>
+    <p>{{ food.details }}</p>
+    </label>
   </div>
   `
 })
 export class FoodComponent {
   public food: Food;
-  sellPint() {
-    // this.food.pints -= 1;
+  addMeal() {
   }
 }
