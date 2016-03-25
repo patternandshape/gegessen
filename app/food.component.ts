@@ -12,9 +12,6 @@ import { Food } from './food.model';
     </div>
   `
 })
-  // <button (click)="addMeal()" class="btn-success add-button"> \+ </button>
 export class FoodComponent {
   public food: Food;
-  // addMeal() {
-  // }
 }

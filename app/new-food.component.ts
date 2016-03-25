@@ -22,7 +22,6 @@ export class NewFoodComponent {
   addFood(foodName: HTMLInputElement, foodCalories: HTMLInputElement, foodDetails: HTMLInputElement) {
     var newFood = new Food(foodName.value, parseInt(foodCalories.value), foodDetails.value);
     this.onSubmitNewFood.emit(newFood);
-    console.log(newFood);
     foodName.value = "";
     foodCalories.value = "";
     foodDetails.value = "";

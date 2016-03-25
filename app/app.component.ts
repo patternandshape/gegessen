@@ -24,7 +24,5 @@ export class AppComponent {
       new Food("Marzipankartoffeln", 350, " Ate too many of these at the Christmas market. Sehr gut.")
     ];
   }
-  foodWasSelected(clickedFood: Food): void {
-    // console.log(clickedFood);
-  }
+  foodWasSelected(clickedFood: Food): void {}
 }

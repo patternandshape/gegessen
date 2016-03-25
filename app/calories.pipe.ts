@@ -11,10 +11,10 @@ export class CaloriesPipe implements PipeTransform {
     if (calorieCount === "lowCalories") {
       return input.filter((food) => {
         return (food.calories < 300);
-    });
+      });
     } else if (calorieCount === "highCalories") {
       return input.filter((food) => {
-      return (food.calories >= 300);
+        return (food.calories >= 300);
       });
     } else {
       return input;
