@@ -41,13 +41,13 @@ h4 {
 
 label p {
   font-weight: 300;
-  color: #edc613;
+  color: #164f68;
   letter-spacing: 0.05em;
 }
 
 h5 {
   font-weight: 500;
-  color: #edc613;
+  color: #164f68;
   letter-spacing: 0.1em;
 }
 
@@ -67,7 +67,6 @@ h5 {
 
 .food-list {
   text-align: center;
-  /*color: white;*/
   font-weight: 300;
   letter-spacing: 0.1em;
 }
@@ -95,5 +94,12 @@ select {
 
 .foodDetails {
   text-align: center;
-  margin-top: center;
+  margin: 0 auto;
+  width: 325px;
+  height: 150px;
+  padding: 10px;
+  padding-top: 25px;
+  background: #d3e6ee;
+  box-shadow: 3px 3px #164f68;
+  border-radius: 3px;
 }
