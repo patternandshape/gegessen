@@ -2,12 +2,13 @@ import { Component } from 'angular2/core';
 import { Food } from './food.model';
 
 @Component({
-  selector: 'food-display',
+  selector: 'food-details-display',
   inputs: ['food'],
   template: `
-    <div>
+    <div class = "foodDetails">
       <label>
-      <h4>{{ food.name }}</h4>
+      <h5>{{ food.calories }} kCal</h5>
+      <p>{{ food.details }}</p>
       </label>
     </div>
   `

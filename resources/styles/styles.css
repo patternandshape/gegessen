@@ -12,20 +12,21 @@ body {
   margin-top: 80px;
 }
 
-button {
-  margin-top: 25px;
-  height: 75px;
-  width: 75px;
+.add-button {
+  margin-top: 60px;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
   border: none;
   border-radius: 50px;
   margin-right: 20px;
-  font-size: 32px;
+  font-size: 24px;
+  background: red;
+  color: white;
 }
 
-.create {
-  margin-top: 25px;
-  height: 30px;
-  width: 75px;
-  border: none;
-  background: red;
+
+
+p {
+  font-weight: 300;
 }

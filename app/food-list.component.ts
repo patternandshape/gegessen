@@ -29,7 +29,7 @@ import { CaloriesPipe } from './calories.pipe';
 })
 export class FoodListComponent {
   public foodList: Food[];
-  public onFoodSelect: EventEmitter < Food > ;
+  public onFoodSelect: EventEmitter <Food> ;
   public selectedFood: Food;
   public filterDone: string = "all";
   constructor() {
@@ -38,7 +38,7 @@ export class FoodListComponent {
   foodClicked(clickedFood: Food): void {
     this.selectedFood = clickedFood;
     this.onFoodSelect.emit(clickedFood);
-    console.log(this.selectedFood);
+    // console.log(this.selectedFood);
   }
   createFood(createdFood: Food): void {
     this.foodList.push(createdFood)

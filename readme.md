@@ -31,6 +31,7 @@ The user of this app should be able to log each food that they eat with some det
 * Bower
 * Gulp
 * Google Fonts
+* Font Awesome
 
 
 ##### License
