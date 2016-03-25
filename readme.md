@@ -8,7 +8,7 @@ March 25, 2016
 
 ### Description
 
-The user of this app should be able to log each food that they eat with some details about the meal and the number of calories for that portion.
+The user of this app should be able to log each food that they eat with some details about the meal and the number of calories for that portion. They will be able to see and edit the list of the foods they've entered, click on each meal for more information, and sort meals into healthy and unhealthy foods.
 
 ### Setup Instructions
 

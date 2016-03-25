@@ -11,10 +11,11 @@ import { NewFoodComponent } from './new-food.component';
   directives: [FoodComponent, EditFoodDetailsComponent, NewFoodComponent],
   template: `
     <select (change)="onChange($event.target.value)" class="filter">
-      <option value="all">All Inventory</option>
-      <option value="lessThan10">Less than 10 pints left</option>
+      <option value="all">All Meals</option>
+      <option value="lowCalories">Healthy</option>
+      <option value="highCalories">Less Healthy</option>
     </select>
-    <food-display *ngFor="#currentFood of foodList"
+    <food-display *ngFor="#currentFood of foodList | calories:filterDone"
     (click)="foodClicked(currentFood)"
     [food]="currentFood">
     </food-display>
