@@ -1,4 +1,28 @@
-body {
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+  @-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(6deg);
+    }
+  50% {
+    -webkit-transform: rotate(-6deg);
+    }
+  100% {
+    -webkit-transform: rotate(6deg);
+    }
+  }
+
+html, body {
+  padding: 0px;
+  margin: 0px; }
+
+  body {
   background: #2585ae;
   display: flex;
   flex-direction: column;
@@ -37,6 +61,10 @@ h4 {
   font-weight: lighter;
   background: #e50000;
   color: white;
+}
+
+.add-button:hover {
+  -webkit-animation: wiggle 0.5s infinite;
 }
 
 label p {
@@ -102,4 +130,17 @@ select {
   background: #d3e6ee;
   box-shadow: 3px 3px #164f68;
   border-radius: 3px;
+}
+
+.fa-table {
+  margin-left: 50%;
+  margin-top: 325px;
+  color: white;
+  opacity: 0.7;
+  font-size: 3em;
+}
+
+.fa-table:hover {
+  color: white;
+  opacity: 1;
 }

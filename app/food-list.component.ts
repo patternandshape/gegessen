@@ -35,6 +35,7 @@ import { CaloriesPipe } from './calories.pipe';
 
     <new-food (onSubmitNewFood)="createFood($event)"></new-food>
     </div>
+    <i class="fa fa-table"></i>
   `
 })
 export class FoodListComponent {
