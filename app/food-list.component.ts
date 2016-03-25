@@ -15,7 +15,7 @@ import { CaloriesPipe } from './calories.pipe';
   template: `
     <div class="container">
     <select (change)="onChange($event.target.value)" class="filter">
-      <option value="all">All Meals</option>
+      <option value="all">All Meals <i class="fa fa-angle-down"></i></option>
       <option value="lowCalories">Healthy</option>
       <option value="highCalories">Less Healthy</option>
     </select>

@@ -2,7 +2,7 @@ body {
   background: #2585ae;
   display: flex;
   flex-direction: column;
-  color: white;
+  /*color: white;*/
 }
 
 h1 {
@@ -11,9 +11,11 @@ h1 {
   font-size: 8em;
   letter-spacing: 0.3em;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 100px;
   border-bottom: 4px dashed #edc613;
   padding-bottom: 50px;
+  color: white;
+  opacity: 0.9;
 }
 
 h4 {
@@ -23,6 +25,7 @@ h4 {
 
 .food-form {
   margin-top: 80px;
+  margin-left: 27%;
 }
 
 .add-button {
@@ -76,10 +79,17 @@ h5 {
 }
 
 select {
-  width: 150px;
-  margin-left: 44%;
+  width: 200px;
+  height: 36px;
+  margin-left: 41.5%;
   margin-top: 50px;
   margin-bottom: 50px;
+  font-size: 16px;
+  border: none;
+  background: #1d6a8b;
+  padding: 5px 10px 5px 30px;
+  letter-spacing: .1em;
+  font-weight: 300;
   font-size: 16px;
 }
 
