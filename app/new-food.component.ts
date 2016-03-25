@@ -15,6 +15,7 @@ import { Food } from './food.model';
   `
 })
 export class NewFoodComponent {
+  public food: Food; 
   public onSubmitNewFood: EventEmitter < Food > ;
   constructor() {
     this.onSubmitNewFood = new EventEmitter();

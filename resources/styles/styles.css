@@ -1,11 +1,25 @@
-h1 {
-  color: blue;
-  font-size: 5em;
-  letter-spacing: 0.1em;
+body {
+  background: #2585ae;
+  display: flex;
+  flex-direction: column;
 }
 
-body {
-  background: #ceebfd;
+h1 {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: light;
+  font-size: 8em;
+  letter-spacing: 0.3em;
+  text-align: center;
+  margin-top: 150px;
+  border-bottom: 4px dashed #edc613;
+  padding-bottom: 50px;
+}
+
+h4 {
+  font-weight: 300;
+  color: white;
+  letter-spacing: 0.1em;
 }
 
 .food-form {
@@ -30,4 +44,5 @@ body {
 
 p {
   font-weight: 300;
+  color: #124257;
 }
