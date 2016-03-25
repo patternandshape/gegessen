@@ -1,5 +1,5 @@
 {
-  "name": "taproom-app",
+  "name": "gegessen",
   "version": "1.0.0",
   "scripts": {
     "start": "npm run tsc:w",
@@ -38,12 +38,12 @@
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patternandshape/taproom-app.git"
+    "url": "git+https://github.com/patternandshape/gegessen.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/patternandshape/taproom-app/issues"
+    "url": "https://github.com/patternandshape/gegessen/issues"
   },
-  "homepage": "https://github.com/patternandshape/taproom-app#readme",
+  "homepage": "https://github.com/patternandshape/gegessen#readme",
   "description": ""
 }
