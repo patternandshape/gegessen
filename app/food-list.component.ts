@@ -48,7 +48,7 @@ export class FoodListComponent {
     // console.log(this.selectedFood);
   }
   createFood(createdFood: Food): void {
-    this.foodList.push(createdFood)
+    this.foodList.push(createdFood);
   }
   onChange(filterOption) {
     this.filterDone = filterOption;
