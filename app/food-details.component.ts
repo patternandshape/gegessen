@@ -13,9 +13,6 @@ import { Food } from './food.model';
     </div>
   `
 })
-  // <button (click)="addMeal()" class="btn-success add-button"> \+ </button>
-export class FoodComponent {
+export class FoodDetailsComponent {
   public food: Food;
-  // addMeal() {
-  // }
 }
