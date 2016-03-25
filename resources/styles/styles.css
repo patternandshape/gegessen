@@ -2,10 +2,10 @@ body {
   background: #2585ae;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 h1 {
-  color: white;
   font-family: 'Quicksand', sans-serif;
   font-weight: light;
   font-size: 8em;
@@ -18,7 +18,6 @@ h1 {
 
 h4 {
   font-weight: 300;
-  color: white;
   letter-spacing: 0.1em;
 }
 
@@ -36,13 +35,55 @@ h4 {
   margin-right: 20px;
   font-size: 24px;
   font-weight: lighter;
-  background: red;
+  background: #e50000;
   color: white;
 }
 
-
-
 p {
   font-weight: 300;
-  color: #124257;
+  color: #edc613;
+  letter-spacing: 0.05em;
+  /*text-align: center;*/
+}
+
+h5 {
+  font-weight: 500;
+  color: #edc613;
+  letter-spacing: 0.1em;
+  /*text-align: center;*/
+}
+
+.input-sm {
+  border-radius: 3px;
+  margin-right: 10px;
+  border: none;
+  height: 40px;
+  font-size: 1em;
+}
+
+.selected {
+  color: #edc613;
+}
+
+.form-heading {
+  color: #164f68;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.food-list {
+  text-align: center;
+}
+
+select {
+  width: 150px;
+  margin-left: 44%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.foodDetails {
+  text-align: center;
+  margin-top: center;
 }

@@ -13,6 +13,7 @@ import { CaloriesPipe } from './calories.pipe';
   pipes: [CaloriesPipe],
   directives: [FoodComponent, FoodDetailsComponent, EditFoodDetailsComponent, NewFoodComponent],
   template: `
+    <div class="container">
     <select (change)="onChange($event.target.value)" class="filter">
       <option value="all">All Meals</option>
       <option value="lowCalories">Healthy</option>
@@ -33,6 +34,7 @@ import { CaloriesPipe } from './calories.pipe';
     </edit-food-details>
 
     <new-food (onSubmitNewFood)="createFood($event)"></new-food>
+    </div>
   `
 })
 export class FoodListComponent {

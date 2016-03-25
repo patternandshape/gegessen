@@ -6,7 +6,7 @@ import { Food } from './food.model';
   outputs: ['onSubmitNewFood'],
   template: `
   <div class="food-form">
-    <h4>Add Meal: </h4>
+    <h4 class="form-heading">Add Meal: </h4>
     <input placeholder="Food" class="input-sm" #newFood>
     <input placeholder="Calories" class="input-sm" #newCalories>
     <input placeholder="Details" class="input-sm" #newDetails>
@@ -15,7 +15,7 @@ import { Food } from './food.model';
   `
 })
 export class NewFoodComponent {
-  public food: Food; 
+  public food: Food;
   public onSubmitNewFood: EventEmitter < Food > ;
   constructor() {
     this.onSubmitNewFood = new EventEmitter();
