@@ -29,12 +29,12 @@ import { CaloriesPipe } from './calories.pipe';
     <food-details-display *ngIf="selectedFood" [food]="selectedFood">
     </food-details-display>
 
-
     <edit-food-details *ngIf="selectedFood" [food]="selectedFood">
     </edit-food-details>
 
     <new-food (onSubmitNewFood)="createFood($event)"></new-food>
     </div>
+
     <i class="fa fa-table"></i>
   `
 })
@@ -43,16 +43,20 @@ export class FoodListComponent {
   public onFoodSelect: EventEmitter < Food > ;
   public selectedFood: Food;
   public filterDone: string = "all";
+
   constructor() {
     this.onFoodSelect = new EventEmitter();
   }
+
   foodClicked(clickedFood: Food): void {
     this.selectedFood = clickedFood;
     this.onFoodSelect.emit(clickedFood);
   }
+
   createFood(createdFood: Food): void {
     this.foodList.push(createdFood);
   }
+  
   onChange(filterOption) {
     this.filterDone = filterOption;
   }

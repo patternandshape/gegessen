@@ -10,7 +10,6 @@ import { Food } from './food.model';
     <input placeholder="Food" class="input-sm" #newFood>
     <input placeholder="Calories" class="input-sm" #newCalories>
     <input placeholder="Details" class="input-sm" #newDetails>
-
     <button (click)="addFood(newFood, newCalories, newDetails)" class="create btn-success add-button"><i class="fa fa-cutlery"></i></button>
   </div>
   `
@@ -18,6 +17,7 @@ import { Food } from './food.model';
 export class NewFoodComponent {
   public food: Food;
   public onSubmitNewFood: EventEmitter <Food> ;
+
   constructor() {
     this.onSubmitNewFood = new EventEmitter();
   }
