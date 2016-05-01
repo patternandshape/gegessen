@@ -24,12 +24,12 @@ The user of this app should be able to log each food that they eat with some det
 
 * Angular2
 * TypeScript
-* HTML
-* CSS
 * NPM
 * Node
 * Bower
 * Gulp
+* CSS
+* HTML
 * Google Fonts
 * Font Awesome
 
